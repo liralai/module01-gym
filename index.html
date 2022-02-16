@@ -40,15 +40,65 @@
                     <button type="button">Узнать подробнее</button>
                 </div>
                 <div class="banner-down">
-                    <a href="#" class="down-button"></a>
+                    <a href="#events" class="down-button"></a>
                 </div>
                 <div class="banner-box">
                     <div class="banner-gradient-left"></div>
                     <div class="banner-gradient-right"></div>
-                    <img class="banner-img" src="" alt="">
+                    <img class="banner-img" src="/images/girl.png" alt="girl">
                 </div>
             </div>
+            <section id="events" class="events">
+                <h3>Ближайшие события</h3>
+                <div class="events-grid">
+                    <div class="events-box">
+                        <div class="events-item">
+                            <p class="date">29.06 - 4.07</p>
+                            <h4>Марафон выносливости</h4>
+                            <a href="#" class="events-button">Учавствовать</a>
+                            <p class="type">марафон</p>
+                        </div>
+                    </div>
+                    <div class="events-box">
+                        <div class="events-item">
+                            <p class="date">9.07</p>
+                            <h4>Как стать тренером?</h4>
+                            <a href="#" class="events-button">Учавствовать</a>
+                            <p class="type">вебинар</p>
+                        </div>
+                    </div>
+                    <div class="events-box">
+                        <div class="events-item">
+                            <p class="date">15.07</p>
+                            <h4>Йога, как стиль жизни</h4>
+                            <a href="#" class="events-button">Учавствовать</a>
+                            <p class="type">вебинар</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Расписание тренировок</h3>
+                <p>22 - 28 июня</p>
+            </section>
         </div>
     </main>
+    <script>
+        // Smooth Scroll
+        const links = document.querySelectorAll(".down-button");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>
