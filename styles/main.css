@@ -35,27 +35,44 @@ a {
     color: #2B3541;
     text-decoration: none;
 }
+nav a {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    margin-top: 10px;
+    display: block;
+    transition: .3s;
+}
+nav a:hover {
+    border-bottom: 1px solid #2B3541;
+}
 .header-social {
     display: flex;
     gap: 30px;
 }
-.inst-logo {
-    background-image: url(../images/instagram.svg);
+.header-social a {
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.inst-logo {
+    background-image: url(../images/instagram.svg);
 }
 .fb-logo {
     background-image: url(../images/facebook.svg);
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+.header-social a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
 .banner {
     position: relative;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 .banner-box {
     display: flex;
@@ -149,7 +166,7 @@ a {
     height: 850px;
 }
 section {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 h3 {
     font-weight: 700;
@@ -157,6 +174,7 @@ h3 {
     line-height: 125%;
     /* identical to box height, or 50px */
     color: #2B3541;
+    padding-top: 40px;
     margin-top: 0;
 } 
 .events-grid {
@@ -250,6 +268,7 @@ h4 {
     line-height: 125%;
     color: #2B3541;
     margin: 0;
+    padding-top: 40px;
 }
 .grid {
     display: grid;
