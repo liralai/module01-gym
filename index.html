@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    <link rel="android-chrome-512x512" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+    <link rel="icon" sizes="16x16" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header>
@@ -96,22 +105,6 @@
                             <p class="text">Упражнения на красивый рельеф</p>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <p class="grid-date">24 июня, 10:00</p>
-                        <div class="grid-name">
-                            <img class="image" src="./images/bottle.svg" alt="бутылка">
-                            <p class="text-head">Body sculpt</p>
-                            <p class="text">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</p>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <p class="grid-date">26 июня, 11:00</p>
-                        <div class="grid-name">
-                            <img class="image" src="./images/dumbbell.svg" alt="штанга">
-                            <p class="text-head">L.A.B.</p>
-                            <p class="text">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</p>
-                        </div>
-                    </div>
                     <div class="grid-item active">
                         <p class="grid-date">23 июня, 10:00</p>
                         <div class="grid-name">
@@ -121,10 +114,26 @@
                         </div>
                     </div>
                     <div class="grid-item">
+                        <p class="grid-date">24 июня, 10:00</p>
+                        <div class="grid-name">
+                            <img class="image" src="./images/bottle.svg" alt="бутылка">
+                            <p class="text-head">Body sculpt</p>
+                            <p class="text">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
                         <p class="grid-date">25 июня, 11:00</p>
                         <div class="grid-name">
                             <img class="image" src="./images/heart.svg" alt="сердце">
                             <p class="text-head">Дыхательные практики</p>
+                            <p class="text">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <p class="grid-date">26 июня, 11:00</p>
+                        <div class="grid-name">
+                            <img class="image" src="./images/dumbbell.svg" alt="штанга">
+                            <p class="text-head">L.A.B.</p>
                             <p class="text">Упражнения помогут создать красивый рельеф и прийти в спортивную форму.</p>
                         </div>
                     </div>
@@ -148,7 +157,7 @@
                         <button type="submit">Подписаться</button>
                     </form>
                     <input type="checkbox" id="01" class="checkbox">
-                    <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank">персональных данных</a></label>
+                    <label for="01">Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
                 </div>
             </div>
         </section>
@@ -160,7 +169,9 @@
                         <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
                         <button>Записаться</button>
                     </div>
-                    <img class="about-img"  src="./images/trainer.jpg" alt="тренер">
+                    <div class="about-img">
+                        <img src="./images/trainer.jpg" alt="тренер">
+                    </div>
                 </div>
                 <div class="about-blocks">
                     <div class="about-item">
@@ -185,7 +196,29 @@
     </main>
     <footer>
         <div class="container">
-            
+            <div class="footer">
+                <a href="#" class="footer-logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">О компании</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social"> 
+                    <div class="email">
+                        <a href="#">info@freefit.com</a>
+                    </div>
+                    <div class="social">
+                        <a href="#" target="_blank" class="inst-logo"></a>
+                        <a href="#" target="_blank" class="fb-logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down">
+                <p>© 2020, Все права защищены</p>
+                <p>Сделано в рамках курса <a href="#">учебной платформы</a></p> 
+            </div>
         </div>
     </footer>
     <script>
